@@ -3,6 +3,12 @@
 - [vote-boost-plugin](./vote-boost-plugin): The plugin program source code. Provides a 10x voting power boost for each governance token deposited.
 - [create-dao](./create-dao/): TypeScript code utilizing [governance-idl-sdk](https://www.npmjs.com/package/governance-idl-sdk) to create a test Realm DAO.
 
+Plugin program Devnet address: `77ZgVtaFYZE6aSnoFcrSuSadrADJPEQ8qDrmbGskuroE`
+
+Test DAO Name: `Lezend's Test DAO`
+
+Test DAO Address: `2e6Nb9vD3uRy2kJVvzfyz9H1gepRqwQ9pxY5JyaPFeHu`
+
 ## Plugin
 
 The custom plugin is based on the [Quadratic Voting](https://github.com/Mythic-Project/governance-program-library/tree/master/programs/quadratic) example. Modifications include removing quadratic coefficient-related components and implementing a 10x voting power boost for each deposited token. This logic is implemented in the [update_voter_weight_record](./vote-boost-plugin/programs/vote-boost-plugin/src/instructions/update_voter_weight_record.rs#L57):
